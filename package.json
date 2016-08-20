@@ -1,0 +1,23 @@
+{
+  "name": "hipchat-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonburduzha/hipchat-clone.git"
+  },
+  "author": "anton.burduzha@hotmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antonburduzha/hipchat-clone/issues"
+  },
+  "homepage": "https://github.com/antonburduzha/hipchat-clone#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
