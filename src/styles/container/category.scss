@@ -1,0 +1,21 @@
+.container {
+  background: $color;
+  width: 100%;
+  height: auto;
+  .title {
+    text-align: center;
+    font-size: 3em;
+  }
+
+  .category-list {
+    list-style-type: none;
+    color: black;
+    font-weight: 700;
+    &-item {
+      border: 1px solid green;
+    }
+    .category-info {
+      text-decoration: overline;
+    }
+  }
+}
