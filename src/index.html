@@ -2,33 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hipchat Clone</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<div class="col-md-12 text-center">Oleg</div>
-    <div class="container">
-        <h1 class="title">Categories</h1>
-        <ul class="category-list">
-            <li class="category-list-item">
-                <p class="category-info">1</p>
-            </li>
-            <li class="category-list-item">
-                <p class="category-info">2</p>
-            </li>
-            <li class="category-list-item">
-                <p class="category-info">3</p>
-            </li>
-            <li class="category-list-item">
-                <p class="category-info">4</p>
-            </li>
-            <li class="category-list-item">
-                <p class="category-info">5</p>
-            </li>
-            <li class="category-list-item">
-                <p class="category-info">6</p>
-            </li>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <nav class="navbar navbar-default navbar-block" role="navigation">
+        <div class="container-fluid navbar-container">
+            <div class="navbar-header">
+                <a class="navbar-brand brand-logo" href="#"></a>
+                <button type="button" class="navbar-toggle mobile-menu-btn" data-toggle="collapse" data-target="#button-collapse-id">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="button-collapse-id">
+                <ul class="nav navbar-nav navbar-list">
+                    <li class="navbar-list-item primary-list-item">
+                        <button class="drop-button" href="#dropmenu" data-toggle="collapse">For teams&#160;<b class="caret"></b></button>
+                    </li>
+                    <li class="navbar-list-item secondary-list-item">
+                        <a href="#"><span class="list-item-color">For Software teams</span></a>
+                    </li>
+                    <li class="navbar-list-item secondary-list-item">
+                        <a href="#"><span class="list-item-color">For Marketing teams</span></a>
+                    </li>
+                    <li class="navbar-list-item secondary-list-item">
+                        <a href="#"><span class="list-item-color">For IT teams</span></a>
+                    </li>
+                    <li class="navbar-list-item">
+                        <a href="#"><span class="list-item-color">Pricing</span></a>
+                    </li>
+                    <li class="navbar-list-item">
+                        <a href="#"><span class="list-item-color">Integrations</span></a>
+                    </li>
+                    <li class="navbar-list-item">
+                        <a href="#"><span class="list-item-color">Server</span></a>
+                    </li>
+                    <li class="navbar-list-item">
+                        <a href="#"><span class="list-item-color">Downloads</span></a>
+                    </li>
+                    <li class="navbar-list-item">
+                        <a href="#"><span class="list-item-color">Log in</span></a>
+                    </li>
+                    <li class="navbar-list-item">
+                        <button class="sign-up-button" type="button">Sign up</button>
+                    </li>
+                    <li class="navbar-list-item secondary-list-item">
+                        <a href="#"></a>
+                    </li>
+                    <li class="navbar-list-item secondary-list-item">
+                        <a href="#"><span class="list-item-color">Help & Contact</span></a>
+                    </li>
+                    <li class="navbar-list-item secondary-list-item">
+                        <a href="#"><span class="list-item-color">Love Stories</span></a>
+                    </li>
+                    <li class="navbar-list-item secondary-list-item">
+                        <a href="#"><span class="list-item-color">Careers</span></a>
+                    </li>
+                    <li class="navbar-list-item secondary-list-item">
+                        <a href="#"><span class="list-item-color">Press</span></a>
+                    </li>
+                    <li class="navbar-list-item secondary-list-item">
+                        <a href="#"><span class="list-item-color">Blog</span></a>
+                    </li>
+                    <li class="navbar-list-item secondary-list-item">
+                        <a href="#"><span class="list-item-color">Developer doc</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="row collapse-menu" id="dropmenu">
+        <ul class="collapse-menu-list">
+            <li class="collapse-menu-item"><a class="collapse-item-color" href="#">Software</a></li>
+            <li class="collapse-menu-item"><a class="collapse-item-color" href="#">IT</a></li>
+            <li class="collapse-menu-item"><a class="collapse-item-color" href="#">Marketing</a></li>
         </ul>
     </div>
 </body>
