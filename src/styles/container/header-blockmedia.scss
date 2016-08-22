@@ -1,5 +1,5 @@
-@media screen and (max-width: 769px) {
-  .header-block-container {
+.header-block-container {
+  @media screen and (max-width: 769px) {
     height: 537px;
 
     .header-block {
@@ -11,10 +11,8 @@
       }
     }
   }
-}
 
-@media screen and (max-width: 641px) {
-  .header-block-container {
+  @media screen and (max-width: 641px) {
     background-image: url('../img/header-block-bg-mobile.jpg');
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -38,10 +36,8 @@
       }
     }
   }
-}
 
-@media screen and (max-width: 435px) {
-  .header-block-container {
+  @media screen and (max-width: 435px) {
     .header-block {
       margin-right: 0;
 
@@ -50,7 +46,9 @@
       }
     }
   }
+}
 
+@media screen and (max-width: 435px) {
   .header-block-title {
     margin-top: 45px;
   }

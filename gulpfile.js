@@ -46,5 +46,10 @@ gulp.task('vendor-js-bootstrap', function () {
         .pipe(gulp.dest('dist/js'));
 });
 
+gulp.task('vendor-js-jquery', function () {
+    gulp.src('node_modules/jquery-custom/jquery.1/dist/jquery.min.js')
+        .pipe(gulp.dest('dist/js'));
+});
 
-gulp.task('build', ['vendor-css-bootstrap', 'vendor-js-bootstrap', 'index', 'sass', 'images']);
+
+gulp.task('build', ['vendor-css-bootstrap', 'vendor-js-bootstrap', 'index', 'sass', 'images', 'vendor-js-jquery']);
