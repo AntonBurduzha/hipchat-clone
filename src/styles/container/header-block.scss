@@ -1,0 +1,45 @@
+.header-block-container {
+  background-image: url('../img/header-block-bg.jpg');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  height: 491px;
+  padding: 0;
+
+  .header-block {
+    margin: 0 24px;
+    padding-bottom: 80px;
+
+    .header-block-box {
+      margin: 0 23px 23px;
+      text-align: center;
+    }
+  }
+
+  .header-block-title {
+    color: $header-blocktitle-color;
+    font-size: 61px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-top: 65px;
+  }
+
+  .header-block-sub-title {
+    color: $header-blocksubtitle-color;
+    margin-bottom: 20px;
+  }
+
+  .header-block-btn {
+    background-color: $header-blockbtn-color;
+    border: 0;
+    color: $white-color;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 25px 0 65px;
+    padding: 10px 16px;
+
+    &:hover,
+    &:focus {
+      background-color: $header-blockbtnhover-color;
+    }
+  }
+}
