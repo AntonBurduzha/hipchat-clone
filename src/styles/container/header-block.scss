@@ -17,10 +17,11 @@
 
   .header-block-title {
     color: $header-blocktitle-color;
-    font-size: 61px;
+    font-size: 59px;
     font-weight: bold;
+    letter-spacing: -1px;
     margin-bottom: 25px;
-    margin-top: 65px;
+    margin-top: 70px;
   }
 
   .header-block-sub-title {
@@ -42,4 +43,59 @@
       background-color: $header-blockbtnhover-color;
     }
   }
+
+  @media screen and (max-width: $header-screen804) {
+    height: 537px;
+
+    .header-block {
+      margin: 0;
+
+      .header-block-box {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: $header-screen641) {
+    background-image: url('../img/header-block-bg-mobile.jpg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    height: 455px;
+
+    .header-block-title {
+      font-size: 32px;
+      margin-bottom: 22px;
+    }
+
+    .header-block-sub-title {
+      font-size: 24px;
+      margin-bottom: 0;
+    }
+
+    .header-block {
+      margin-left: 0;
+
+      .header-block-box {
+        margin-left: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: $header-screen435) {
+    .header-block {
+      margin-right: 0;
+
+      .header-block-box {
+        margin-right: 0;
+      }
+
+      .header-block-title {
+        margin-top: 45px;
+      }
+    }
+  }
 }
+
+
+
