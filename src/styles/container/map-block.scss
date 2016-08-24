@@ -1,0 +1,190 @@
+.map-blockcontainer {
+  padding: 0;
+
+  .map-block {
+    background: url('../img/map-block/map.png') center 33% no-repeat;
+    background-size: cover;
+    height: 600px;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+
+    @media screen and (max-width: $map-screen640) {
+      border-bottom: 1px solid $mapblock-border-color;
+      border-top: 1px solid $mapblock-border-color;
+      height: 408px;
+      margin-top: 40px;
+    }
+  }
+
+  .person-group {
+    height: 200px;
+    left: 9.46%;
+    position: absolute;
+    top: 307px;
+    width: 200px;
+
+    @media screen and (max-width: $map-screen640) {
+      height: 200px;
+      left: 9.46%;
+      position: absolute;
+      top: 330px;
+      width: 200px;
+    }
+
+    .person1 {
+      background: url('../img/map-block/left1.1.png') no-repeat;
+      background-size: 100%;
+      height: 46px;
+      left: 16px;
+      position: absolute;
+      top: 0;
+      width: 46px;
+
+      @media screen and (max-width: $map-screen640) {
+        background: url('../img/map-block/online-logo.png') no-repeat;
+        background-size: 100%;
+        height: 24px;
+        width: 24px;
+      }
+    }
+
+    .person2 {
+      background: url('../img/map-block/left1.2.png') no-repeat;
+      background-size: 100%;
+      height: 46px;
+      left: 0;
+      position: absolute;
+      top: 35px;
+      width: 46px;
+
+      @media screen and (max-width: $map-screen640) {
+        background: url('../img/map-block/nodisturb-logo.png') no-repeat;
+        background-size: 100%;
+        height: 24px;
+        width: 24px;
+      }
+    }
+
+    .person3 {
+      background: url('../img/map-block/left1.3.png') no-repeat;
+      background-size: 100%;
+      height: 46px;
+      left: 40px;
+      position: absolute;
+      top: 40px;
+      width: 115px;
+
+      @media screen and (max-width: $map-screen640) {
+        background: url('../img/map-block/offline-logo.png') no-repeat;
+        background-size: 100%;
+        height: 24px;
+        width: 24px;
+      }
+    }
+  }
+
+  .top-left {
+    background: url('../img/map-block/top-left.png') no-repeat;
+    background-size: 100%;
+    height: 46px;
+    left: 28.1%;
+    position: absolute;
+    top: 89px;
+    width: 94px;
+
+    @media screen and (max-width: $map-screen640) {
+      background: url('../img/map-block/online-logo.png') no-repeat;
+      background-size: 100%;
+      height: 24px;
+      top: 30px;
+      width: 24px;
+    }
+  }
+
+  .top-right {
+    background: url('../img/map-block/top-right.png') no-repeat;
+    background-size: 100%;
+    height: 46px;
+    left: 82%;
+    position: absolute;
+    top: 105px;
+    width: 98px;
+
+    @media screen and (max-width: $map-screen640) {
+      background: url('../img/map-block/phone-logo.png') no-repeat;
+      background-size: 100%;
+      height: 24px;
+      top: 40px;
+      width: 24px;
+    }
+  }
+
+  .bottom {
+    background: url('../img/map-block/bottom.png') no-repeat;
+    background-size: 100%;
+    height: 46px;
+    left: 48%;
+    position: absolute;
+    top: 456px;
+    width: 109px;
+
+    @media screen and (max-width: $map-screen640) {
+      background: url('../img/map-block/offline-logo.png') no-repeat;
+      background-size: 100%;
+      height: 24px;
+      top: 350px;
+      width: 24px;
+    }
+  }
+
+  .bottom-right {
+    background: url('../img/map-block/bottom-right.png') no-repeat;
+    background-size: 100%;
+    height: 46px;
+    left: 84%;
+    position: absolute;
+    top: 410px;
+    width: 140px;
+
+    @media screen and (max-width: $map-screen640) {
+      background: url('../img/map-block/online-logo.png') no-repeat;
+      background-size: 100%;
+      height: 24px;
+      left: 79%;
+      top: 330px;
+      width: 24px;
+    }
+  }
+
+  .map-block-col {
+    padding-top: 200px;
+
+    @media screen and (max-width: $map-screen800) {
+      padding-top: 165px;
+    }
+
+    @media screen and (max-width: $map-screen640) {
+      padding-top: 95px;
+    }
+  }
+
+  .map-blocktitle {
+    color: $header-blocktitle-color;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin-bottom: 11px;
+  }
+
+  .map-blockdescription {
+    font-size: 16px;
+    line-height: 24px;
+    margin: auto;
+    width: 575px;
+
+    @media screen and (max-width: $map-screen640) {
+      width: auto;
+    }
+  }
+}
