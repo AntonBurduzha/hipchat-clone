@@ -8,10 +8,25 @@
     float: none;
     margin-left: 12%;
     vertical-align: top;
+
+    @media screen and (max-width: $navbar-screen767) {
+      margin: 0;
+    }
   }
 
   .navbar-collapse {
     text-align: center;
+
+    @media screen and (max-width: $screen1006) {
+      .nav > li > a {
+        padding: 10px 5px;
+      }
+    }
+
+    @media screen and (max-width: $navbar-screen767) {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   @media screen and (max-width: $navbar-screen2500) {
@@ -46,14 +61,23 @@
     .navbar-collapse {
       text-align: left;
     }
-  }
-}
 
-.navbar > .container {
-  .navbar-brand,
-  .navbar > .container-fluid {
-    .navbar-brand {
-      margin-left: 0;
+    .navbar-default {
+      .navbar-nav > li > a {
+        padding: 5px;
+      }
+    }
+
+    .container > .navbar-header,
+    .container-fluid > .navbar-header,
+    .container > .navbar-collapse,
+    .container-fluid > .navbar-collapse {
+      margin-left: -23px;
+      margin-right: -23px;
+    }
+
+    .mobile-menu-btn {
+      margin: 30px 15px 8px 0;
     }
   }
 }
@@ -79,11 +103,17 @@
 
     .navbar-list-item {
       color: $navbar-font-color;
-      font-size: 16px;
+      font-size: $font16;
       padding: 25px 0;
 
       .list-item-color {
         color: $navbar-font-color;
+      }
+
+      @media screen and (max-width: $screen1006) {
+        .list-item-color {
+          font-size: $font14;
+        }
       }
     }
 
@@ -108,7 +138,7 @@
       border: 1px solid $green-color;
       border-radius: 4px;
       color: $green-color;
-      font-size: 14px;
+      font-size: $font14;
       font-weight: bold;
       margin-left: 10px;
       margin-top: 8px;
@@ -123,10 +153,10 @@
     }
   }
 
-  @media screen and (max-width: $navbar-screen1006) {
+  @media screen and (max-width: $screen1006) {
     .navbar-list {
       .drop-button {
-        font-size: 14px;
+        font-size: $font14;
         margin-right: 0;
         padding-top: 10px;
       }
@@ -166,7 +196,7 @@
         border: 0;
         border-radius: 0;
         color: $white-color;
-        font-size: 14px;
+        font-size: $font14;
         font-weight: normal;
         margin-left: 5px;
         margin-top: 0;
@@ -193,37 +223,16 @@
     margin-bottom: 20px;
     margin-top: 20px;
     padding-left: 30%;
-  }
 
-  .collapse-menu-item {
-    display: inline;
-    font-size: 16px;
-    padding: 0 15px;
-  }
-
-  .collapse-item-color {
-    color: $white-color;
-    font-size: 16px;
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
-
-  @media screen and (max-width: $navbar-screen1800) {
-    .collapse-menu-list {
+    @media screen and (max-width: $navbar-screen1800) {
       padding-left: 20%;
     }
-  }
 
-  @media screen and (max-width: $navbar-screen1367) {
-    .collapse-menu-list {
+    @media screen and (max-width: $navbar-screen1367) {
       padding-left: 15%;
     }
-  }
 
-  @media screen and (max-width: $navbar-screen1006) {
-    .collapse-menu-list {
+    @media screen and (max-width: $screen1006) {
       padding-left: 5%;
 
       .collapse-menu-item {
@@ -231,45 +240,28 @@
       }
     }
   }
-}
 
-@media screen and (max-width: $navbar-screen1006) {
-  .nav > li > a {
-    padding: 10px 5px;
+  .collapse-menu-item {
+    display: inline;
+    font-size: $font16;
+    padding: 0 15px;
   }
 
-  .navbar-list-item {
-    .list-item-color {
-      font-size: 14px;
+  .collapse-item-color {
+    color: $white-color;
+    font-size: $font16;
+
+    &:hover {
+      text-decoration: none;
     }
   }
 }
 
-@media screen and (max-width: $navbar-screen767) {
-  .navbar-default {
-    .navbar-nav > li > a {
-      padding: 5px;
+.navbar > .container {
+  .navbar-brand,
+  .navbar > .container-fluid {
+    .navbar-brand {
+      margin-left: 0;
     }
-  }
-
-  .container > .navbar-header,
-  .container-fluid > .navbar-header,
-  .container > .navbar-collapse,
-  .container-fluid > .navbar-collapse {
-    margin-left: -23px;
-    margin-right: -23px;
-  }
-
-  .navbar-nav {
-    margin: 0;
-  }
-
-  .navbar-collapse {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .mobile-menu-btn {
-    margin: 30px 15px 8px 0;
   }
 }

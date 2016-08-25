@@ -1,0 +1,104 @@
+.lock-block {
+  background-color: $navbar-font-color;
+  height: 442px;
+  margin: 0;
+
+  @media screen and (max-width: $crossplatform-screen853) {
+    height: 320px;
+  }
+
+  @media screen and (max-width: $navbar-screen767) {
+    height: auto;
+  }
+
+  .lock-content {
+    float: right;
+    margin-top: 80px;
+    width: 456px;
+
+    @media screen and (max-width: $screen1006) {
+      float: none;
+      margin: 0 20px;
+      width: auto;
+    }
+
+    @media screen and (max-width: $crossplatform-screen853) {
+      margin-top: 60px;
+    }
+
+    @media screen and (max-width: $navbar-screen767) {
+      margin-top: 100px;
+    }
+
+    @media screen and (max-width: $header-screen435) {
+      margin-top: 80px;
+    }
+
+    .lock-title {
+      color: $white-color;
+      font-size: $font32;
+      font-weight: bold;
+      margin-bottom: 11px;
+    }
+
+    .lock-description {
+      color: $white-color;
+      font-size: $font16;
+      line-height: 1.42857143;
+      margin-bottom: 12px;
+    }
+
+    .leatn-about-btn {
+      background-color: $header-blocktitle-color;
+      border: 0;
+      color: $white-color;
+      font-size: $font14;
+      margin-top: 25px;
+      padding: 7px 10px;
+
+      &:hover,
+      &focus {
+        background-color: $lock-block-btn;
+        outline: 0;
+      }
+
+      @media screen and (max-width: $navbar-screen767) {
+        margin-bottom: 20px;
+      }
+
+      @media screen and (max-width: $header-screen435) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .key-img {
+    height: 286px;
+    margin: 80px 23px 47px;
+    width: 456px;
+
+    @media screen and (max-width: $screen1006) {
+      margin: 80px 0 47px;
+    }
+
+    @media screen and (max-width: $crossplatform-screen853) {
+      margin-top: 20px;
+    }
+
+    @media screen and (max-width: $navbar-screen767) {
+      height: 346px;
+      margin: auto;
+      width: 553px;
+    }
+  }
+
+  .key-img-container {
+    @media screen and (max-width: $navbar-screen767) {
+      padding-bottom: 40px;
+    }
+
+    @media screen and (max-width: $header-screen435) {
+      padding-bottom: 10px;
+    }
+  }
+}

@@ -9,12 +9,7 @@ gulp.task('index', function () {
 });
 
 gulp.task('images-jpg', function () {
-    gulp.src('src/img/**/*.jpg')
-        .pipe(gulp.dest('dist/img'))
-});
-
-gulp.task('images-png', function () {
-    gulp.src('src/img/**/*.png')
+    gulp.src('src/img/**/*')
         .pipe(gulp.dest('dist/img'))
 });
 
@@ -41,20 +36,14 @@ gulp.task('watch',function () {
     gulp.watch('src/**/*.scss', ['sass']);
 });
 
-gulp.task('vendor-css-bootstrap', function () {
+gulp.task('vendor-libraries', function () {
     gulp.src('node_modules/bootstrap/dist/css/bootstrap.css')
         .pipe(gulp.dest('dist/css'));
-});
-
-gulp.task('vendor-js-bootstrap', function () {
     gulp.src('node_modules/bootstrap/dist/js/bootstrap.min.js')
         .pipe(gulp.dest('dist/js'));
-});
-
-gulp.task('vendor-js-jquery', function () {
-    gulp.src('node_modules/jquery-custom/jquery.1/dist/jquery.min.js')
+    gulp.src('node_modules/jquery/dist/jquery.min.js')
         .pipe(gulp.dest('dist/js'));
 });
 
 
-gulp.task('build', ['vendor-css-bootstrap', 'vendor-js-bootstrap', 'index', 'sass', 'images-jpg', 'images-png' ,'vendor-js-jquery']);
+gulp.task('build', ['vendor-libraries', 'index', 'sass', 'images-jpg']);

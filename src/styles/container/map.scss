@@ -1,20 +1,16 @@
-.map-blockcontainer {
-  padding: 0;
+.map-block {
+  background: url('../img/map-block/map.png') center 33% no-repeat;
+  background-size: cover;
+  height: 600px;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
 
-  .map-block {
-    background: url('../img/map-block/map.png') center 33% no-repeat;
-    background-size: cover;
-    height: 600px;
-    margin: 0;
-    overflow: hidden;
-    position: relative;
-
-    @media screen and (max-width: $map-screen640) {
-      border-bottom: 1px solid $mapblock-border-color;
-      border-top: 1px solid $mapblock-border-color;
-      height: 408px;
-      margin-top: 40px;
-    }
+  @media screen and (max-width: $screen641) {
+    border-bottom: 1px solid $mapblock-border-color;
+    border-top: 1px solid $mapblock-border-color;
+    height: 408px;
+    margin-top: 40px;
   }
 
   .person-group {
@@ -24,7 +20,7 @@
     top: 307px;
     width: 200px;
 
-    @media screen and (max-width: $map-screen640) {
+    @media screen and (max-width: $screen641) {
       height: 200px;
       left: 9.46%;
       position: absolute;
@@ -41,7 +37,7 @@
       top: 0;
       width: 46px;
 
-      @media screen and (max-width: $map-screen640) {
+      @media screen and (max-width: $screen641) {
         background: url('../img/map-block/online-logo.png') no-repeat;
         background-size: 100%;
         height: 24px;
@@ -58,7 +54,7 @@
       top: 35px;
       width: 46px;
 
-      @media screen and (max-width: $map-screen640) {
+      @media screen and (max-width: $screen641) {
         background: url('../img/map-block/nodisturb-logo.png') no-repeat;
         background-size: 100%;
         height: 24px;
@@ -75,7 +71,7 @@
       top: 40px;
       width: 115px;
 
-      @media screen and (max-width: $map-screen640) {
+      @media screen and (max-width: $screen641) {
         background: url('../img/map-block/offline-logo.png') no-repeat;
         background-size: 100%;
         height: 24px;
@@ -93,7 +89,7 @@
     top: 89px;
     width: 94px;
 
-    @media screen and (max-width: $map-screen640) {
+    @media screen and (max-width: $screen641) {
       background: url('../img/map-block/online-logo.png') no-repeat;
       background-size: 100%;
       height: 24px;
@@ -111,7 +107,7 @@
     top: 105px;
     width: 98px;
 
-    @media screen and (max-width: $map-screen640) {
+    @media screen and (max-width: $screen641) {
       background: url('../img/map-block/phone-logo.png') no-repeat;
       background-size: 100%;
       height: 24px;
@@ -129,7 +125,7 @@
     top: 456px;
     width: 109px;
 
-    @media screen and (max-width: $map-screen640) {
+    @media screen and (max-width: $screen641) {
       background: url('../img/map-block/offline-logo.png') no-repeat;
       background-size: 100%;
       height: 24px;
@@ -147,7 +143,7 @@
     top: 410px;
     width: 140px;
 
-    @media screen and (max-width: $map-screen640) {
+    @media screen and (max-width: $screen641) {
       background: url('../img/map-block/online-logo.png') no-repeat;
       background-size: 100%;
       height: 24px;
@@ -160,31 +156,32 @@
   .map-block-col {
     padding-top: 200px;
 
-    @media screen and (max-width: $map-screen800) {
+    @media screen and (max-width: $screen804) {
       padding-top: 165px;
     }
 
-    @media screen and (max-width: $map-screen640) {
+    @media screen and (max-width: $screen641) {
       padding-top: 95px;
     }
   }
 
   .map-blocktitle {
     color: $header-blocktitle-color;
-    font-size: 32px;
+    font-size: $font32;
     font-weight: bold;
     line-height: 1.3;
     margin-bottom: 11px;
   }
 
   .map-blockdescription {
-    font-size: 16px;
+    font-size: $font16;
     line-height: 24px;
     margin: auto;
     width: 575px;
 
-    @media screen and (max-width: $map-screen640) {
+    @media screen and (max-width: $screen641) {
       width: auto;
     }
   }
 }
+

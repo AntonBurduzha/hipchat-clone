@@ -1,23 +1,19 @@
-.header-block-container {
+.header-block {
   background-image: url('../img/header-block-bg.jpg');
   background-position: bottom center;
   background-repeat: no-repeat;
   height: 491px;
-  padding: 0;
+  margin: 0 24px;
+  padding-bottom: 80px;
 
-  .header-block {
-    margin: 0 24px;
-    padding-bottom: 80px;
-
-    .header-block-box {
-      margin: 0 0 23px;
-      text-align: center;
-    }
+  .header-block-box {
+    margin: 0 0 23px;
+    text-align: center;
   }
 
   .header-block-title {
     color: $header-blocktitle-color;
-    font-size: 59px;
+    font-size: $font59;
     font-weight: bold;
     letter-spacing: -1px;
     margin-bottom: 25px;
@@ -33,7 +29,7 @@
     background-color: $header-blockbtn-color;
     border: 0;
     color: $white-color;
-    font-size: 16px;
+    font-size: $font16;
     font-weight: bold;
     margin: 25px 0 65px;
     padding: 10px 16px;
@@ -44,58 +40,51 @@
     }
   }
 
-  @media screen and (max-width: $header-screen804) {
+  @media screen and (max-width: $screen804) {
     height: 537px;
+    margin: 0;
 
-    .header-block {
+    .header-block-box {
       margin: 0;
-
-      .header-block-box {
-        margin: 0;
-        padding: 0;
-      }
+      padding: 0;
     }
   }
 
-  @media screen and (max-width: $header-screen641) {
+  @media screen and (max-width: $screen641) {
     background-image: url('../img/header-block-bg-mobile.jpg');
     background-position: bottom center;
     background-repeat: no-repeat;
     height: 455px;
+    margin-left: 0;
 
     .header-block-title {
-      font-size: 32px;
+      font-size: $font32;
       margin-bottom: 22px;
     }
 
     .header-block-sub-title {
-      font-size: 24px;
+      font-size: $font24;
       margin-bottom: 0;
     }
 
-    .header-block {
+    .header-block-box {
       margin-left: 0;
-
-      .header-block-box {
-        margin-left: 0;
-      }
     }
   }
 
   @media screen and (max-width: $header-screen435) {
-    .header-block {
+    margin-right: 0;
+
+    .header-block-box {
       margin-right: 0;
+    }
 
-      .header-block-box {
-        margin-right: 0;
-      }
-
-      .header-block-title {
-        margin-top: 45px;
-      }
+    .header-block-title {
+      margin-top: 45px;
     }
   }
 }
+
 
 
 

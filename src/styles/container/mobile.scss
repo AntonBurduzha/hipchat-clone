@@ -1,0 +1,128 @@
+.mobile-block {
+  height: 559px;
+  margin: 100px 0 0;
+  overflow: hidden;
+
+  @media screen and (max-width: $screen769) {
+    height: auto;
+    margin: 50px 0 0;
+  }
+
+  .mobile-block-cols {
+    @media screen and (max-width: $header-screen435) {
+      padding: 0;
+    }
+  }
+
+  .mobile-content {
+    width: 456px;
+
+    @media screen and (max-width: $screen1006) {
+      width: auto;
+    }
+
+    .integrations-img {
+      height: 25px;
+      margin-bottom: 15px;
+      margin-top: 55px;
+      width: 179px;
+    }
+
+    .mobile-title-first {
+      color: $header-blocktitle-color;
+      font-size: $font32;
+      font-weight: bold;
+      line-height: 1.333;
+      margin-bottom: 11px;
+      margin-top: 0;
+    }
+
+    .mobile-description-first {
+      font-size: $font16;
+      line-height: 24px;
+      margin-bottom: 12px;
+    }
+
+    .fun-img {
+      height: 25px;
+      margin-bottom: 15px;
+      margin-top: 55px;
+      width: 188.5px;
+    }
+
+    .mobile-title-second {
+      color: $header-blocktitle-color;
+      font-size: $font32;
+      font-weight: bold;
+      line-height: 1.333;
+      margin-bottom: 11px;
+      margin-top: 0;
+    }
+
+    .mobile-description-second {
+      font-size: $font16;
+      line-height: 24px;
+      margin-bottom: 12px;
+    }
+  }
+
+  .iphone-block {
+    float: right;
+    height: 509px;
+    margin: 0 23px;
+    position: relative;
+    width: 456px;
+
+    @media screen and (max-width: $screen1006) {
+      margin: 0;
+    }
+
+    @media screen and (max-width: $navbar-screen767) {
+      float: none;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    @media screen and (max-width: $header-screen435) {
+      width: 466px;
+    }
+
+    .iphone-container {
+      background: url('../img/iphone.png') 0 -40px no-repeat;;
+      background-size: 340px 700px;
+      height: 700px;
+      left: 50%;
+      margin-left: -170px;
+      overflow: hidden;
+      position: absolute;
+      width: 340px;
+
+      @media screen and (max-width: $crossplatform-screen853) {
+        margin-left: -130px;
+      }
+
+      @media screen and (max-width: $navbar-screen767) {
+        margin-left: -170px;
+      }
+
+      @media screen and (max-width: $header-screen435) {
+        margin-left: -210px;
+      }
+
+      @media screen and (max-width: $screen360) {
+        margin-left: -245px;
+      }
+
+      .iphone-content {
+        background: url('../img/iphone-content.png') no-repeat;
+        background-size: 270px auto;
+        height: 1110px;
+        left: 34px;
+        position: absolute;
+        top: 135px;
+        width: 280px;
+        z-index: -1;
+      }
+    }
+  }
+}
