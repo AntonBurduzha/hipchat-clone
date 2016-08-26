@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 33 33" enable-background="new 0 0 33 33" xml:space="preserve">
+<g>
+	<g>
+		<line fill="none" stroke="#231F20" stroke-miterlimit="10" x1="17.2" y1="20" x2="17.2" y2="16"/>
+		<path fill="none" stroke="#231F20" stroke-miterlimit="10" d="M10.2,16.1V20l-7,2.5c-1.7,0.6-2.8,2.2-2.8,3.9v3.3h16.7"/>
+		<ellipse fill="none" stroke="#231F20" stroke-miterlimit="10" cx="13.7" cy="8.8" rx="7" ry="8.3"/>
+		<path fill="none" stroke="#231F20" stroke-miterlimit="10" d="M20.6,8.1c-0.2,0-0.4,0-0.7,0.1c-2.4,0.5-3.9-0.4-5.2-2.7
+			C14,7,11.5,8.2,9.5,8.2c-1,0-1.8-0.2-2.7-0.6"/>
+	</g>
+	<rect x="21.4" y="23.5" fill="none" stroke="#231F20" stroke-miterlimit="10" width="11.1" height="9"/>
+	<line fill="none" stroke="#231F20" stroke-miterlimit="10" x1="26.9" y1="29.7" x2="26.9" y2="28.3"/>
+	<g>
+		<path fill="#231F20" d="M26.9,25.5c-0.8,0-1.4,0.6-1.4,1.4c0,0.8,0.6,1.4,1.4,1.4c0.8,0,1.4-0.6,1.4-1.4
+			C28.3,26.2,27.7,25.5,26.9,25.5L26.9,25.5z"/>
+	</g>
+	<path fill="none" stroke="#231F20" stroke-miterlimit="10" d="M22.8,23.5v-1.4c0-2.3,1.9-4.2,4.2-4.2c2.3,0,4.2,1.9,4.2,4.2v1.4"/>
+</g>
+</svg>

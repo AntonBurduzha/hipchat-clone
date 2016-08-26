@@ -1,0 +1,51 @@
+.getstarted-block {
+  background-color: $heapchat-interface-color;
+  margin: 0;
+
+  .get-started-container {
+    margin-bottom: 40px;
+    margin-top: 50px;
+
+    @media screen and (max-width: $header-screen435) {
+      margin-bottom: 25px;
+      margin-top: 20px;
+    }
+
+    .get-started-title {
+      color: $white-color;
+      font-size: $font32;
+      font-weight: bold;
+      margin-bottom: 11px;
+    }
+
+    .get-start-btn {
+      background-color: $header-blocktitle-color;
+      border: 0;
+      border-radius: 3px;
+      color: $white-color;
+      font-size: $font16;
+      font-weight: bold;
+      margin: 20px 0 15px;
+      padding: 10px 16px;
+
+      &:hover,
+      &:focus {
+        background-color: $lock-block-btn;
+      }
+    }
+
+    .link {
+      margin-top: 20px;
+    }
+
+    .host-link {
+      color: $header-blocktitle-color;
+      font-size: $font14;
+      margin-top: 20px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

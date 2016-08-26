@@ -1,0 +1,32 @@
+.featured-text-block {
+  background-color: $feature-bg;
+  margin: 0;
+
+  .feature-column {
+    padding-top: 75px;
+  }
+
+  .feature-content {
+    margin: auto;
+    width: 623px;
+
+    @media screen and (max-width: $screen769) {
+      width: auto;
+    }
+
+    .feature-subtitle {
+      color: $feature-color;
+      font-size: $font14;
+      font-weight: bold;
+      letter-spacing: 2px;
+      line-height: 1.333333;
+      margin-bottom: 11px;
+    }
+
+    .feature-title {
+      color: $header-blocktitle-color;
+      font-size: $font32;
+      font-weight: bold;
+    }
+  }
+}
