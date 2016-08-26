@@ -1,0 +1,213 @@
+.footer-block {
+  margin: 0;
+
+  @media screen and (max-width: $navbar-screen767) {
+    background-color: $feature-bg;
+  }
+
+  .footer-block-column {
+    @media screen and (max-width: $header-screen435) {
+      padding: 0;
+    }
+  }
+
+  .footer-content {
+    margin: 0 auto;
+    width: 1008px;
+
+    @media screen and (max-width: $interface-screen1030) {
+      width: auto;
+    }
+  }
+
+  .hipchat-footer-logo {
+    margin: 21px;
+
+    @media screen and (max-width: $interface-screen904) {
+      margin-left: 15px;
+    }
+
+    @media screen and (max-width: $navbar-screen767) {
+      display: none;
+    }
+
+    .footer-logo {
+      background: url('../img/footer/hipchat.svg');
+      display: block;
+      height: 26px;
+      width: 115px;
+
+      &:hover {
+        opacity: .75;
+      }
+    }
+  }
+
+  .footer-navbar {
+    margin: 0 22px 22px 0;
+    position: relative;
+
+    @media screen and (max-width: $navbar-screen767) {
+      display: none;
+    }
+  }
+
+  .footer-navbar-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 0;
+    padding-right: 16.66667%;
+
+    .footer-navbar-item {
+      float: left;
+      margin-bottom: 14px;
+      margin-left: 2.38095%;
+      margin-right: 2.38095%;
+      width: 15.2381%;
+    }
+
+    .footer-list-links {
+      color: $footer-color;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  .footer-social {
+    height: 22px;
+    padding-left: 2.38095%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 15.2381%;
+
+    @media screen and (max-width: $interface-screen904) {
+      clear: both;
+      margin: 10px 0;
+      position: static;
+    }
+
+    .social-list {
+      height: inherit;
+      list-style-type: none;
+      margin-bottom: 0;
+      padding-left: 0;
+
+      @media screen and (max-width: $interface-screen904) {
+        width: 104px;
+      }
+
+      .social-item {
+        float: left;
+        margin-right: 15px;
+
+        @media screen and (max-width: $interface-screen904) {
+          margin-right: 10px;
+        }
+      }
+
+      .social-links-twitter {
+        background: url('../img/footer/twitter.svg');
+        display: block;
+        height: 22px;
+        overflow: hidden;
+        width: 25px;
+
+        &:hover {
+          opacity: .75;
+        }
+      }
+
+      .social-links-facebook {
+        background: url('../img/footer/facebook.svg');
+        display: block;
+        height: 22px;
+        overflow: hidden;
+        width: 19px;
+
+        &:hover {
+          opacity: .75;
+        }
+      }
+
+      .social-links-google {
+        background: url('../img/footer/gplus.svg');
+        display: block;
+        height: 21px;
+        overflow: hidden;
+        width: 23px;
+
+        &:hover {
+          opacity: .75;
+        }
+      }
+    }
+  }
+
+  .footer-copyright {
+    margin: 0 21px 21px;
+
+    @media screen and (max-width: $interface-screen904) {
+      margin-left: 15px;
+    }
+
+    @media screen and (max-width: $navbar-screen767) {
+      margin-bottom: 2.3%;
+    }
+
+    .copyright-container {
+      clear: both;
+      color: $footer-color;
+      font-size: 11px;
+      height: 18px;
+      line-height: 13px;
+      margin-bottom: 0;
+
+      @media screen and (max-width: $navbar-screen767) {
+        margin-top: 15px;
+        padding-bottom: 50px;
+        position: relative;
+        text-align: center;
+      }
+
+      .copy-link {
+        color: $footer-color;
+        display: inline-block;
+        font-size: $font11;
+        margin-right: 15px;
+        vertical-align: bottom;
+      }
+
+      .copy-year {
+        color: $footer-color;
+        display: inline-block;
+        font-size: $font11;
+      }
+    }
+
+    .copy-link-atlassian {
+      background: url('../img/footer/atlassian.svg');
+      background-size: contain;
+      display: inline-block;
+      height: 17px;
+      margin-bottom: 0;
+      margin-right: 15px;
+      overflow: hidden;
+      vertical-align: bottom;
+      width: 75px;
+
+      &:hover {
+        opacity: .75;
+      }
+
+      @media screen and (max-width: $navbar-screen767) {
+        bottom: 0;
+        left: 50%;
+        margin-left: -37.5px;
+        margin-right: 0;
+        position: absolute;
+      }
+    }
+  }
+}
