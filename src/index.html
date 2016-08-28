@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-block" role="navigation">
+    <nav class="navbar navbar-default navbar-block">
         <div class="container-fluid navbar-container">
             <div class="navbar-header">
                 <a class="navbar-brand brand-logo" href="#"></a>
@@ -22,7 +22,7 @@
             <div class="collapse navbar-collapse" id="button-collapse-id">
                 <ul class="nav navbar-nav navbar-list">
                     <li class="navbar-list-item primary-list-item">
-                        <button class="drop-button" href="#dropmenu" data-toggle="collapse">For teams&#160;<b class="caret"></b></button>
+                        <button class="drop-button" data-toggle="collapse">For teams&#160;<b class="caret"></b></button>
                     </li>
                     <li class="navbar-list-item secondary-list-item">
                         <a href="#"><span class="list-item-color">For Software teams</span></a>
@@ -77,14 +77,12 @@
         </div>
     </nav>
 
-    <div class="row collapse-drop-menu">
-        <div class="row collapse-menu" id="dropmenu">
-            <ul class="collapse-menu-list">
-                <li class="collapse-menu-item"><a class="collapse-item-color" href="#">Software</a></li>
-                <li class="collapse-menu-item"><a class="collapse-item-color" href="#">IT</a></li>
-                <li class="collapse-menu-item"><a class="collapse-item-color" href="#">Marketing</a></li>
-            </ul>
-        </div>
+    <div class="row collapse-menu" id="dropmenu">
+        <ul class="collapse-menu-list">
+            <li class="collapse-menu-item"><a class="collapse-item-color" href="#">Software</a></li>
+            <li class="collapse-menu-item"><a class="collapse-item-color" href="#">IT</a></li>
+            <li class="collapse-menu-item"><a class="collapse-item-color" href="#">Marketing</a></li>
+        </ul>
     </div>
 
     <main class="container-fluid main-container">
@@ -113,7 +111,7 @@
 
         <div class="row crossplatform-block">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 crossplatform-block-cols">
-                <img src="img/crossplatform-photo.jpg" alt="crossplatform-photo" class="crossplatform-photo">
+                <img src="img/crossplatform-photo.jpg" alt="crossplatform-photo" class="crossplatform-photo lazy">
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 crossplatform-block-cols">
                 <div class="description-content">
@@ -160,12 +158,12 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <div class="mobile-content">
-                    <img src="img/integrations.png" alt="integration" class="integrations-img">
+                    <img src="img/integrations.png" alt="integration" class="integrations-img lazy">
                     <h2 class="mobile-title-first">Serious integrations</h2>
                     <p class="mobile-description-first">HipChat integrates with the services your team uses everyday.
                         Get notifications and stay up-to-date with services like JIRA, Bitbucket, GitHub, Asana,
                         Google Hangouts, Zendesk, and <a href="#">150+ more</a>.</p>
-                    <img src="img/fun.png" alt="fun" class="fun-img">
+                    <img src="img/fun.png" alt="fun" class="fun-img lazy">
                     <h2 class="mobile-title-second">Serious fun</h2>
                     <p class="mobile-description-second">Get your groove back with <a href="#">custom emoticons</a> and
                         <a href="#">HipBots</a>, animated GIFs, RSS feeds, and Twitter notifications. Work doesn't always
@@ -184,7 +182,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 key-img-container">
-                <img src="img/key.svg" alt="key" class="key-img img-responsive">
+                <img src="img/key.svg" alt="key" class="key-img img-responsive lazy">
             </div>
         </div>
 
@@ -202,19 +200,19 @@
                 <div class="row flex-row">
                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 features-column">
                         <div class="feature">
-                            <img src="img/feature-block/security.svg" alt="security" class="img-sizing-secure">
+                            <img src="img/feature-block/security.svg" alt="security" class="img-sizing-secure lazy">
                             <h4 class="feature-title">Security and privacy</h4>
                             <p class="feature-text">Security is #1. HipChat's secure conversations are transferred in 256-bit
                                 SSL encryption – the same security protocol as online banks.</p>
                         </div>
                         <div class="feature">
-                        <img src="img/feature-block/file-share.svg" alt="file" class="img-sizing-file">
+                        <img src="img/feature-block/file-share.svg" alt="file" class="img-sizing-file lazy">
                         <h4 class="feature-title">Drag and drop file sharing</h4>
                         <p class="feature-text">rab and share files from your desktop, Dropbox, email, or anywhere.
                             HipChat shows a preview of the file to everyone in the room.</p>
                     </div>
                         <div class="feature">
-                            <img src="img/feature-block/search.svg" alt="search" class="img-sizing-search">
+                            <img src="img/feature-block/search.svg" alt="search" class="img-sizing-search lazy">
                             <h4 class="feature-title">Fully searchable</h4>
                             <p class="feature-text">Every room is searchable by keyword, including text, links, files, and more.
                                 If it's discussed in HipChat, it's saved forever. We got you.</p>
@@ -222,19 +220,19 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 features-column">
                         <div class="feature">
-                            <img src="img/feature-block/guest-access.svg" alt="access" class="img-sizing-access">
+                            <img src="img/feature-block/guest-access.svg" alt="access" class="img-sizing-access lazy">
                             <h4 class="feature-title">Secure guest access</h4>
                             <p class="feature-text">Bring clients, vendors, and other third-parties into a HipChat room.
                                 They'll only see what you want them to see. You have complete control.</p>
                         </div>
                         <div class="feature">
-                            <img src="img/feature-block/unlimited-chat-rooms.svg" alt="chat" class="img-sizing-chat">
+                            <img src="img/feature-block/unlimited-chat-rooms.svg" alt="chat" class="img-sizing-chat lazy">
                             <h4 class="feature-title">Unlimited chat rooms</h4>
                             <p class="feature-text">Create rooms for projects, teams, clients, or the lunchtime basketball
                                 league. When you're finished with a chat room just archive it.</p>
                         </div>
                         <div class="feature">
-                            <img src="img/feature-block/persistent-cloud.svg" alt="persistent" class="img-sizing-persistent">
+                            <img src="img/feature-block/persistent-cloud.svg" alt="persistent" class="img-sizing-persistent lazy">
                             <h4 class="feature-title">Persistent</h4>
                             <p class="feature-text">HipChat synchronizes across desktop, mobile, and web apps.
                                 That means conversations are never lost when you switch devices.</p>
@@ -242,19 +240,19 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 features-column">
                         <div class="feature">
-                            <img src="img/feature-block/screen-share.svg" alt="screen" class="img-sizing-screen">
+                            <img src="img/feature-block/screen-share.svg" alt="screen" class="img-sizing-screen lazy">
                             <h4 class="feature-title">Easy screen sharing</h4>
                             <p class="feature-text">For when you need to show, not tell. Share your desktop with your colleagues
                                 on any device to collaborate in real time.</p>
                         </div>
                         <div class="feature">
-                            <img src="img/feature-block/customize.svg" alt="custom" class="img-sizing-customize">
+                            <img src="img/feature-block/customize.svg" alt="custom" class="img-sizing-customize lazy">
                             <h4 class="feature-title">Fully customizable</h4>
                             <p class="feature-text">Customize how HipChat alerts you when you miss a message.
                                 Create a combination of in-app, email, SMS, and mobile push notifications.</p>
                         </div>
                         <div class="feature">
-                            <img src="img/feature-block/clock.svg" alt="time" class="img-sizing-clock">
+                            <img src="img/feature-block/clock.svg" alt="time" class="img-sizing-clock lazy">
                             <h4 class="feature-title">Time traveling</h4>
                             <p class="feature-text">Just kidding. But having a fully searchable history is sort of like time travel...</p>
                         </div>
@@ -273,7 +271,7 @@
                 </div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <img src="img/hipchat-customers.png" alt="companies" class="companies-img img-responsive">
+                <img src="img/hipchat-customers.png" alt="companies" class="companies-img img-responsive lazy">
             </div>
         </div>
 
@@ -332,5 +330,25 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.lazyload.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".drop-button").click(function(){
+                $("#dropmenu").slideToggle(400);
+            });
+        });
+    </script>
+    <script>
+        $(window).scroll(function () {
+            var pixs = $(document).scrollTop();
+            pixs = pixs / -2;
+            $(".iphone-content").css({"top": pixs+950})
+        });
+    </script>
+    <script>
+        $(function() {
+            $("img.lazy").lazyload();
+        });
+    </script>
 </body>
 </html>

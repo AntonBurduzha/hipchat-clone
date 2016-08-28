@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var sassLint = require('gulp-sass-lint');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
+var svgSprite = require("gulp-svg-sprites");
 
 gulp.task('index', function () {
    gulp.src('src/index.html')
@@ -52,7 +53,14 @@ gulp.task('vendor-libraries', function () {
         .pipe(gulp.dest('dist/js'));
     gulp.src('node_modules/jquery/dist/jquery.min.js')
         .pipe(gulp.dest('dist/js'));
+    gulp.src('node_modules/jquery-lazyload/jquery.lazyload.js')
+        .pipe(gulp.dest('dist/js'));
 });
 
+gulp.task('sprite-footer', function () {
+    return gulp.src('./src/img/footer/*.svg')
+        .pipe(svgSprite())
+        .pipe(gulp.dest('./dist/sprites/footer/'));
+});
 
-gulp.task('build', ['vendor-libraries', 'index', 'sass', 'images-jpg']);
+gulp.task('build', ['vendor-libraries', 'index', 'sass', 'images-jpg', 'sprite-footer']);

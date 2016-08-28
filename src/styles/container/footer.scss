@@ -32,8 +32,12 @@
     }
 
     .footer-logo {
-      background: url('../img/footer/hipchat.svg');
+      background-image: url('../sprites/footer/svg/sprite.svg');
+      background-position: 0 -6em;
+      background-repeat: no-repeat;
+      background-size: 11.5em 10.9em;
       display: block;
+      font-size: 10px;
       height: 26px;
       width: 115px;
 
@@ -108,8 +112,12 @@
       }
 
       .social-links-twitter {
-        background: url('../img/footer/twitter.svg');
+        background-image: url('../sprites/footer/svg/sprite.svg');
+        background-position: 0 -8.7em;
+        background-repeat: no-repeat;
+        background-size: 11.5em 10.9em;
         display: block;
+        font-size: 10px;
         height: 22px;
         overflow: hidden;
         width: 25px;
@@ -120,8 +128,12 @@
       }
 
       .social-links-facebook {
-        background: url('../img/footer/facebook.svg');
+        background-image: url('../sprites/footer/svg/sprite.svg');
+        background-position: 0 -1.7em;
+        background-repeat: no-repeat;
+        background-size: 11.5em 10.9em;
         display: block;
+        font-size: 10px;
         height: 22px;
         overflow: hidden;
         width: 19px;
@@ -132,8 +144,12 @@
       }
 
       .social-links-google {
-        background: url('../img/footer/gplus.svg');
+        background-image: url('../sprites/footer/svg/sprite.svg');
+        background-position: 0 -3.9em;
+        background-repeat: no-repeat;
+        background-size: 11.5em 10.9em;
         display: block;
+        font-size: 10px;
         height: 21px;
         overflow: hidden;
         width: 23px;
@@ -187,9 +203,12 @@
     }
 
     .copy-link-atlassian {
-      background: url('../img/footer/atlassian.svg');
-      background-size: contain;
+      background-image: url('../sprites/footer/svg/sprite.svg');
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: 11.5em 10.9em;
       display: inline-block;
+      font-size: 10px;
       height: 17px;
       margin-bottom: 0;
       margin-right: 15px;
