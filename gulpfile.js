@@ -4,6 +4,27 @@ var sassLint = require('gulp-sass-lint');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var svgSprite = require("gulp-svg-sprites");
+var concat = require('gulp-concat');
+var cleanCSS = require('gulp-clean-css');
+
+gulp.task('minify-css', function() {
+    return gulp.src('dist/css/bundle.css')
+        .pipe(cleanCSS({compatibility: 'ie9'}))
+        .pipe(gulp.dest('dist/css'));
+});
+
+gulp.task('concat-css', function() {
+    return gulp.src('dist/css/*.css')
+        .pipe(concat('bundle.css'))
+        .pipe(gulp.dest('dist/css'));
+});
+
+gulp.task('concat-js', function() {
+    return gulp.src(['dist/js/jquery.min.js', 'dist/js/bootstrap.min.js', 'dist/js/jquery.lazyload.js'])
+        .pipe(concat('bundle.js'))
+        .pipe(gulp.dest('dist/js'));
+});
+
 
 gulp.task('index', function () {
    gulp.src('src/index.html')
@@ -63,4 +84,4 @@ gulp.task('sprite-footer', function () {
         .pipe(gulp.dest('./dist/sprites/footer/'));
 });
 
-gulp.task('build', ['vendor-libraries', 'index', 'sass', 'images-jpg', 'sprite-footer']);
+gulp.task('build', ['vendor-libraries', 'index', 'sass', 'images-jpg', 'sprite-footer', 'concat-css', 'concat-js']);

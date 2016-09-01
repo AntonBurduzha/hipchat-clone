@@ -2,6 +2,14 @@
   background-color: $heapchat-interface-color;
   margin: 0;
 
+  @media screen and (max-width: $navbar-screen1150) {
+    height: 375px;
+  }
+
+  @media screen and (max-width: $screen769) {
+    height: auto;
+  }
+
   .interface-block-cols {
     padding: 0;
   }
@@ -13,9 +21,14 @@
   }
 
   .interface-blockphoto {
+    border-radius: 6px;
     height: 444px;
     margin: 25px 0 5px;
     width: 721px;
+
+    @media screen and (max-width: $navbar-screen1150) {
+      height: auto;
+    }
 
     @media screen and (max-width: $screen769) {
       height: auto;
