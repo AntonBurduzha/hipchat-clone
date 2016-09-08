@@ -25,7 +25,6 @@ gulp.task('concat-js', function() {
         .pipe(gulp.dest('dist/js'));
 });
 
-
 gulp.task('index', function () {
    gulp.src('src/index.html')
        .pipe(gulp.dest('dist'))
