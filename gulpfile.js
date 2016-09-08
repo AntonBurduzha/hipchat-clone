@@ -83,4 +83,4 @@ gulp.task('sprite-footer', function () {
         .pipe(gulp.dest('./dist/sprites/footer/'));
 });
 
-gulp.task('build', ['vendor-libraries', 'index', 'sass', 'images-jpg', 'sprite-footer', 'concat-css', 'concat-js']);
+gulp.task('build', ['vendor-libraries', 'index', 'sass', 'images-jpg', 'sprite-footer', 'concat-css', 'concat-js', 'minify-css']);
